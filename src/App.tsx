@@ -15,7 +15,7 @@ import { IconContext } from "react-icons";
 
 function App() {
   return (
-    <div>
+      <Router>
       <div className="contact-bar">
         <div className='contact-container'>
           <BsWalletFill style={{color: "red", margin: '6px'}}/>
@@ -31,7 +31,6 @@ function App() {
         </IconContext.Provider>
         </div>
       </div>
-      <Router>
         <NavBar/>
           <Routes>
             <Route path='/' element={<Home/>}/>
@@ -44,7 +43,6 @@ function App() {
             <Route path='/contact' element={<Contact/>}/>
           </Routes>
       </Router>
-    </div>
   );
 }
 

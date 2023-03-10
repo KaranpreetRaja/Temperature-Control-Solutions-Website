@@ -1,9 +1,28 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom"
 import "./nav.css";
 
 function NavBar(){
+    const [navbar, setNavbar] = useState(false);
+
+    const changeNavStyle = () => {
+        if (window.scrollY >= 40){
+            setNavbar(true);
+        }
+        else{
+            setNavbar(false);
+        }
+    }
+    
+    useEffect(() => {
+        window.addEventListener("scroll", changeNavStyle); 
+        return () => {
+          window.removeEventListener("scroll", changeNavStyle);
+        };
+      }, []);
+
     return(
-        <div className="navbar">
+        <div className={navbar ? 'navbar active' : 'navbar'}>
             <div className="title">
                 <h1>Temperature Control Solutions</h1>
             </div>

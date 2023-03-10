@@ -1,6 +1,6 @@
 function Condominium(){
     return(
-        <div></div>
+        <section>Condominium</section>
     )
 }
 

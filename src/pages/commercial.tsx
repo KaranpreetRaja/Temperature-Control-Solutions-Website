@@ -1,6 +1,6 @@
 function Commercial(){
     return(
-        <div></div>
+        <section>Commercial</section>
     )
 }
 

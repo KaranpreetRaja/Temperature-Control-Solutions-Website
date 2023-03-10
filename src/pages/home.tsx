@@ -1,6 +1,8 @@
 function Home(){
     return(
-        <div></div>
+        <section>
+          <div className="home-panel1"></div>
+        </section>
     )
 }
 

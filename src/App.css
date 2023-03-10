@@ -50,4 +50,10 @@
 
 /* Home Page Starts*/
 
+.home-panel1{
+    width: 100%;
+    height: 1000px;
+    background-image: src("./assets/crane.webp");
+}
+
 
