@@ -1,0 +1,53 @@
+/* Some Contact Info sitting above the navbar */
+.contact-bar{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.871);
+}
+
+.contact-container{
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.social-container{
+    display: flex;
+    align-items: center;
+    margin-right: 150px;
+}
+
+.email-bar{
+    text-decoration: none;
+    color: rgb(148, 147, 147);
+    margin-right: 15px;
+    font-size: 17px;
+    transition: color 0.2s ease-in-out;
+}
+
+.email-bar:hover{
+    color: white;
+}
+
+.number-bar{
+    color: rgb(148, 147, 147);
+    font-size: 17px;
+}
+
+.social-icons{
+    height: 25px;
+    width: 25px;
+    margin: 6px;
+    color: rgb(148, 147, 147);
+    transition: color 0.2s ease-in-out;
+}
+
+.social-icons:hover{
+    color: white;
+}
+
+/* Home Page Starts*/
+
+
